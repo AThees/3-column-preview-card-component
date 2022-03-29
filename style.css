@@ -1,0 +1,185 @@
+:root {
+    --Bright-orange : hsl(31, 77%, 52%);
+    --Dark-cyan     : hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white: hsl(0, 0%, 100%, 0.75);
+    /* (paragraphs) */
+    --Very-light-gray  : hsl(0, 0%, 95%);
+    /*(background, headings, buttons)*/
+}
+
+.container {
+    width     : 950px;
+    height    : 500px;
+    position  : absolute;
+    left      : 50%;
+    top       : 50%;
+    transform : translate(-50%, -50%);
+    background: var(--Very-light-gray);
+}
+
+.sedans {
+    position      : relative;
+    vertical-align: top;
+    float         : left;
+    padding       : 5%;
+    box-sizing    : border-box;
+    width         : 33%;
+    height        : 100%;
+    background    : var(--Bright-orange);
+    border-radius : 0.5rem 0 0 0.5rem;
+}
+
+.suvs {
+    position      : relative;
+    vertical-align: top;
+    float         : left;
+    padding       : 5%;
+    box-sizing    : border-box;
+    width         : 33%;
+    height        : 100%;
+    background    : var(--Dark-cyan);
+}
+
+.luxury {
+    position      : relative;
+    vertical-align: top;
+    float         : left;
+    padding       : 5%;
+    box-sizing    : border-box;
+    width         : 33%;
+    height        : 100%;
+    background    : var(--Very-dark-cyan);
+    border-radius : 0 0.5rem 0.5rem 0;
+}
+
+.titulo-modelo {
+    font-family: 'Big Shoulders Display', cursive;
+    margin     : 2rem 0 2rem 0;
+    font-size  : 3rem;
+    color      : var(--Very-light-gray);
+}
+
+.texto-modelo {
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5rem;
+    color      : var(--Transparent-white)
+}
+
+.botao-sedans {
+    height       : 3rem;
+    width        : 9rem;
+    border       : none;
+    border-radius: 2rem;
+    margin-top   : 3.5rem;
+    color        : var(--Bright-orange);
+    background   : var(--Very-light-gray);
+    font-family  : 'Lexend Deca', sans-serif;
+}
+
+.botao-sedans:active {
+    border    : 2px solid var(--Very-light-gray);
+    background: var(--Bright-orange);
+    color     : var(--Very-light-gray);
+}
+
+.botao-suvs {
+    height       : 3rem;
+    width        : 9rem;
+    border       : none;
+    border-radius: 2rem;
+    margin-top   : 3.5rem;
+    color        : var(--Dark-cyan);
+    background   : var(--Very-light-gray);
+    font-family  : 'Lexend Deca', sans-serif;
+}
+
+.botao-suvs:active {
+    border    : 2px solid var(--Very-light-gray);
+    background: var(--Dark-cyan);
+    color     : var(--Very-light-gray);
+}
+
+.botao-luxury {
+    height       : 3rem;
+    width        : 9rem;
+    border       : none;
+    border-radius: 2rem;
+    margin-top   : 3.5rem;
+    color        : var(--Very-dark-cyan);
+    background   : var(--Very-light-gray);
+    font-family  : 'Lexend Deca', sans-serif;
+}
+
+.botao-luxury:active {
+    border    : 2px solid var(--Very-light-gray);
+    background: var(--Very-dark-cyan);
+    color     : var(--Very-light-gray);
+}
+
+@media screen and (max-width: 420px) {
+
+    .container {
+        width     : 80%;
+        height    : 80%;
+        position  : absolute;
+    }
+
+    .sedans {
+        position     : relative;
+        float        : none;
+        width        : 100%;
+        padding      : 3rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .botao-sedans {
+        height       : 3rem;
+        width        : 9rem;
+        border       : none;
+        border-radius: 2rem;
+        margin-top   : 1rem;
+        color        : var(--Bright-orange);
+        background   : var(--Very-light-gray);
+        font-family  : 'Lexend Deca', sans-serif;
+    }
+
+    .suvs {
+        position: relative;
+        float  : none;
+        width  : 100%;
+        padding: 3rem;
+    }
+
+    .botao-suvs {
+        height       : 3rem;
+        width        : 9rem;
+        border       : none;
+        border-radius: 2rem;
+        margin-top   : 1rem;
+        color        : var(--Dark-cyan);
+        background   : var(--Very-light-gray);
+        font-family  : 'Lexend Deca', sans-serif;
+    }
+
+    .luxury {
+        position     : relative;
+        float        : none;
+        width        : 100%;
+        border-radius: 0 0 0.5rem 0.5rem;
+        padding      : 3rem;
+    }
+
+    .botao-luxury {
+        height       : 3rem;
+        width        : 9rem;
+        border       : none;
+        border-radius: 2rem;
+        margin-top   : 1rem;
+        color        : var(--Very-dark-cyan);
+        background   : var(--Very-light-gray);
+        font-family  : 'Lexend Deca', sans-serif;
+    }
+
+}
