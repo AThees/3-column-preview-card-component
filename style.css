@@ -118,6 +118,10 @@
     color     : var(--Very-light-gray);
 }
 
+.attribution{
+    text-align: center;
+}
+
 @media screen and (max-width: 420px) {
 
     .container {
