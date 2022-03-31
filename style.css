@@ -9,6 +9,10 @@
     /*(background, headings, buttons)*/
 }
 
+body {
+    background: var(--Very-light-gray);
+}
+
 .container {
     width     : 950px;
     height    : 500px;
@@ -19,171 +23,141 @@
     background: var(--Very-light-gray);
 }
 
-.sedans {
-    position      : relative;
-    vertical-align: top;
-    float         : left;
-    padding       : 5%;
-    box-sizing    : border-box;
-    width         : 33%;
-    height        : 100%;
-    background    : var(--Bright-orange);
-    border-radius : 0.5rem 0 0 0.5rem;
+.conteudo {
+    display: flex;
+    height : 100%;
 }
 
-.suvs {
-    position      : relative;
-    vertical-align: top;
-    float         : left;
-    padding       : 5%;
-    box-sizing    : border-box;
-    width         : 33%;
-    height        : 100%;
-    background    : var(--Dark-cyan);
+.conteudo__sedans {
+    background: var(--Bright-orange);
+    border-radius: .5rem 0 0 .5rem;
+    padding: 5%;
 }
 
-.luxury {
-    position      : relative;
-    vertical-align: top;
-    float         : left;
-    padding       : 5%;
-    box-sizing    : border-box;
-    width         : 33%;
-    height        : 100%;
-    background    : var(--Very-dark-cyan);
-    border-radius : 0 0.5rem 0.5rem 0;
+.conteudo__suvs {
+    background: var(--Dark-cyan);
+    padding: 5%;
+}
+
+.conteudo__luxury {
+    background: var(--Very-dark-cyan);
+    border-radius: 0 .5rem .5rem 0;
+    padding: 5%;
 }
 
 .titulo-modelo {
     font-family: 'Big Shoulders Display', cursive;
-    margin     : 2rem 0 2rem 0;
-    font-size  : 3rem;
-    color      : var(--Very-light-gray);
+    font-size: 2.5rem;
+    color: var(--Very-light-gray);
 }
 
 .texto-modelo {
     font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
     line-height: 1.5rem;
-    color      : var(--Transparent-white)
+    color: var(--Transparent-white);
 }
 
 .botao-sedans {
-    height       : 3rem;
-    width        : 9rem;
-    border       : none;
-    border-radius: 2rem;
-    margin-top   : 3.5rem;
-    color        : var(--Bright-orange);
-    background   : var(--Very-light-gray);
-    font-family  : 'Lexend Deca', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    color: var(--Bright-orange);
+    background: var(--Very-light-gray);
+    border: none;
+    border-radius: 1.5rem;
+    height: 45px;
+    width: 145px;
+    margin-top: 4rem;
 }
 
 .botao-sedans:active {
-    border    : 2px solid var(--Very-light-gray);
     background: var(--Bright-orange);
-    color     : var(--Very-light-gray);
+    border: 2px solid var(--Transparent-white);
+    color: var(--Very-light-gray);
 }
 
 .botao-suvs {
-    height       : 3rem;
-    width        : 9rem;
-    border       : none;
-    border-radius: 2rem;
-    margin-top   : 3.5rem;
-    color        : var(--Dark-cyan);
-    background   : var(--Very-light-gray);
-    font-family  : 'Lexend Deca', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    color: var(--Dark-cyan);
+    background: var(--Very-light-gray);
+    border: none;
+    border-radius: 1.5rem;
+    height: 45px;
+    width: 145px;
+    margin-top: 4rem;
 }
 
 .botao-suvs:active {
-    border    : 2px solid var(--Very-light-gray);
     background: var(--Dark-cyan);
-    color     : var(--Very-light-gray);
+    border: 2px solid var(--Transparent-white);
+    color: var(--Very-light-gray);
 }
 
 .botao-luxury {
-    height       : 3rem;
-    width        : 9rem;
-    border       : none;
-    border-radius: 2rem;
-    margin-top   : 3.5rem;
-    color        : var(--Very-dark-cyan);
-    background   : var(--Very-light-gray);
-    font-family  : 'Lexend Deca', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    color: var(--Very-dark-cyan);
+    background: var(--Very-light-gray);
+    border: none;
+    border-radius: 1.5rem;
+    height: 45px;
+    width: 145px;
+    margin-top: 4rem;
 }
 
 .botao-luxury:active {
-    border    : 2px solid var(--Very-light-gray);
     background: var(--Very-dark-cyan);
-    color     : var(--Very-light-gray);
+    border: 2px solid var(--Transparent-white);
+    color: var(--Very-light-gray);
 }
 
-.attribution{
+.attribution {
     text-align: center;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 950px) {
 
     .container {
-        width     : 80%;
-        height    : 80%;
-        position  : absolute;
+        width: 80%;
+        height: auto;
+        margin: 85px auto;
+        position  : initial;
+        left      : initial;
+        top       : initial;
+        transform : initial;
+    }
+    
+    .conteudo {
+        flex-direction: column;
     }
 
-    .sedans {
-        position     : relative;
-        float        : none;
-        width        : 100%;
-        padding      : 3rem;
+    .conteudo__sedans {
         border-radius: 0.5rem 0.5rem 0 0;
-    }
-
-    .botao-sedans {
-        height       : 3rem;
-        width        : 9rem;
-        border       : none;
-        border-radius: 2rem;
-        margin-top   : 1rem;
-        color        : var(--Bright-orange);
-        background   : var(--Very-light-gray);
-        font-family  : 'Lexend Deca', sans-serif;
-    }
-
-    .suvs {
-        position: relative;
-        float  : none;
-        width  : 100%;
+        height: calc(430px - 48px);
         padding: 3rem;
     }
 
-    .botao-suvs {
-        height       : 3rem;
-        width        : 9rem;
-        border       : none;
-        border-radius: 2rem;
-        margin-top   : 1rem;
-        color        : var(--Dark-cyan);
-        background   : var(--Very-light-gray);
-        font-family  : 'Lexend Deca', sans-serif;
+    .conteudo__suvs {
+        height: calc(430px - 48px);
+        padding: 3rem;
     }
 
-    .luxury {
-        position     : relative;
-        float        : none;
-        width        : 100%;
+    .conteudo__luxury {
         border-radius: 0 0 0.5rem 0.5rem;
-        padding      : 3rem;
+        height: calc(430px - 48px);
+        padding: 3rem;
+    }
+
+    .botao-sedans {
+        margin-top: 1rem;
+    }
+
+    .botao-suvs {
+        margin-top: 1rem;
     }
 
     .botao-luxury {
-        height       : 3rem;
-        width        : 9rem;
-        border       : none;
-        border-radius: 2rem;
-        margin-top   : 1rem;
-        color        : var(--Very-dark-cyan);
-        background   : var(--Very-light-gray);
-        font-family  : 'Lexend Deca', sans-serif;
+        margin-top: 1rem;
     }
-
 }
