@@ -70,6 +70,12 @@ body {
     margin-top: 4rem;
 }
 
+.botao-sedans:hover {
+    cursor: pointer;
+    background: rgb(190, 190, 190);
+
+}
+
 .botao-sedans:active {
     background: var(--Bright-orange);
     border: 2px solid var(--Transparent-white);
@@ -88,6 +94,11 @@ body {
     margin-top: 4rem;
 }
 
+.botao-suvs:hover {
+    cursor: pointer;
+    background: rgb(190, 190, 190);
+} 
+
 .botao-suvs:active {
     background: var(--Dark-cyan);
     border: 2px solid var(--Transparent-white);
@@ -104,6 +115,11 @@ body {
     height: 45px;
     width: 145px;
     margin-top: 4rem;
+}
+
+.botao-luxury:hover {
+    cursor: pointer;
+    background: rgb(190, 190, 190);
 }
 
 .botao-luxury:active {
